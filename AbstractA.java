@@ -1,4 +1,4 @@
-public abstract class AbstractA implements A, C {
+public abstract class AbstractA implements A, C, Cloneable {
 
 
     public void foo(){
@@ -17,6 +17,16 @@ public abstract class AbstractA implements A, C {
 
     public void helloWorld(){
         System.out.println("hello world");
+    }
+
+    public C clone(){
+        try{
+            return (C) super.clone();
+        } catch(CloneNotSupportedException e){
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
 
