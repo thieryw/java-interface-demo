@@ -26,15 +26,7 @@ public abstract class AbstractA implements A, C, Cloneable {
 
 
 
-    public C clone(){
-        try{
-            return (C) super.clone();
-        } catch(CloneNotSupportedException e){
-            e.printStackTrace();
-        }
 
-        return null;
-    }
 
 
 

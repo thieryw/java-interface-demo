@@ -1,8 +1,8 @@
 
 public class X extends AbstractA implements B {
 
-    int id;
-    String name;
+    private int id;
+    private String name;
 
     public void setId(int id) {
         this.id = id;
@@ -34,6 +34,17 @@ public class X extends AbstractA implements B {
 
     public void go(){
         B.super.go();
+    }
+
+    public X clone(){
+        X out;
+
+        try{
+            out = (X) super.clone();
+        }catch(CloneNotSupportedException e){
+            throw new RuntimeException(e.getMessage());
+        }
+        return out;
     }
         
 

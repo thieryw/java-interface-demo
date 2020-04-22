@@ -42,12 +42,14 @@ public class TestClass{
 
         c1 = ((X)c).clone();
 
+
         System.out.println(((X)c).getId() + " : " + ((X)c).getName());
+
+
 
         System.out.println(((X)c1).getId() + " : " + ((X)c1).getName());
 
 
-        System.out.println((c == c1) + "; they do not hove the same memory address, two objects that are identical");
 
         x.go();
 
