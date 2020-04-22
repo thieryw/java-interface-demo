@@ -5,4 +5,8 @@ public interface B {
     void foo();
     void foobar();
 
+    default void go(){
+        System.out.println("B: go");
+    }
+
 }

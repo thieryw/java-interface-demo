@@ -32,6 +32,13 @@ public class X extends AbstractA implements B {
         System.out.println("barFoo");
     }
 
+    public void go(){
+        B.super.go();
+    }
+        
+
+
+
     
 
 }

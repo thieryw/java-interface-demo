@@ -5,6 +5,9 @@ public class TestClass{
     }
 
 
+
+
+
     public static void main(String[] args) {
         
         X x = new X();
@@ -45,6 +48,15 @@ public class TestClass{
 
 
         System.out.println((c == c1) + "; they do not hove the same memory address, two objects that are identical");
+
+        x.go();
+
+        Y y = new Y();
+
+
+        y.go();
+
+        
         
         
         

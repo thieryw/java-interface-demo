@@ -19,6 +19,13 @@ public abstract class AbstractA implements A, C, Cloneable {
         System.out.println("hello world");
     }
 
+    public void go(){
+        A.super.go();
+        C.super.go();
+    }
+
+
+
     public C clone(){
         try{
             return (C) super.clone();
