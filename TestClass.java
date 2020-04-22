@@ -4,6 +4,11 @@ public class TestClass{
         return 3;
     }
 
+    public void lambdaTest(FunctionalInterface f){
+        f.test();
+    }
+
+
 
 
 
@@ -58,9 +63,25 @@ public class TestClass{
 
         y.go();
 
-        
-        
-        
+        new TestClass().lambdaTest(() -> System.out.println("functional interface test"));
+
+
+        FunctionalInterface1 f = (int[] intArray) -> {
+            for (int z : intArray) {
+                System.out.println(z);
+            }
+        };
+
+
+        f.intArrayDisplay(new int[]{1,2,3,4});
+            
+
+
+
+
+
+
+
         
         
     }
