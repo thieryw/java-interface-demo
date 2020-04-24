@@ -19,6 +19,9 @@ public class TestClass{
 
         x.bar();
 
+        x.setId(1);
+        x.setName("william's X");
+
         System.out.println(A.VAL);
 
         System.out.println(AbstractA.VAL);
@@ -63,6 +66,8 @@ public class TestClass{
 
         y.go();
 
+        
+
         new TestClass().lambdaTest(() -> System.out.println("functional interface test"));
 
 
@@ -75,7 +80,30 @@ public class TestClass{
 
         f.intArrayDisplay(new int[]{1,2,3,4});
             
+        
+        X[] xArray = B.copiesOfX(12, x);
 
+        B.printXArray(xArray);
+
+
+        A a = new X();
+
+        B b = new X();
+
+        ((X)a).setId(3);
+
+        ((X)b).setId(2);
+
+
+        System.out.println(B.compareTwoXId((X)a, (X)b));
+
+        A.printNameAndId((X)a);
+
+        A.printNameAndId((X)b);
+
+        A.printNameAndId((X)c);
+
+            
 
 
 

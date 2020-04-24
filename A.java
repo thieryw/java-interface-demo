@@ -8,5 +8,9 @@ public interface A{
     default void go(){
         System.out.println("A: go");
     }
+
+    static void printNameAndId(X x){
+        System.out.println(x.getId() + " : " + x.getName());
+    }
    
 }
